@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53572FDD-FEAD-4546-B877-3D0200763829}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>autic</RootNamespace>
+    <AssemblyName>autic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\MySQL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addklient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addklient.Designer.cs">
+      <DependentUpon>addklient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addnumbers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addnumbers.Designer.cs">
+      <DependentUpon>addnumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adduslugi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adduslugi.Designer.cs">
+      <DependentUpon>adduslugi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminnumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminnumber.Designer.cs">
+      <DependentUpon>adminnumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminuslug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminuslug.Designer.cs">
+      <DependentUpon>Adminuslug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE.cs" />
+    <Compile Include="baseklient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="baseklient.Designer.cs">
+      <DependentUpon>baseklient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bronirovanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bronirovanie.Designer.cs">
+      <DependentUpon>bronirovanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="glavmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glavmenu.Designer.cs">
+      <DependentUpon>glavmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="glstr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glstr.Designer.cs">
+      <DependentUpon>glstr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information.Designer.cs">
+      <DependentUpon>information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuadmin.Designer.cs">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uslugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uslugi.Designer.cs">
+      <DependentUpon>uslugi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addklient.resx">
+      <DependentUpon>addklient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnumbers.resx">
+      <DependentUpon>addnumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adduslugi.resx">
+      <DependentUpon>adduslugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminnumber.resx">
+      <DependentUpon>adminnumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminuslug.resx">
+      <DependentUpon>Adminuslug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baseklient.resx">
+      <DependentUpon>baseklient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bronirovanie.resx">
+      <DependentUpon>bronirovanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glavmenu.resx">
+      <DependentUpon>glavmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glstr.resx">
+      <DependentUpon>glstr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information.resx">
+      <DependentUpon>information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuadmin.resx">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="uslugi.resx">
+      <DependentUpon>uslugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\logohotel.png" />
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
